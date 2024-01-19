@@ -1,10 +1,13 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
   padding: 0;
   box-sizing: 0;
   box-sizing: border-box;
   margin: 0;
   background-color: #24252a;
 }
+
+
 /* Nav Bar */
 li,
 a,
@@ -60,6 +63,7 @@ button:hover {
   flex-direction: column;
   justify-content: space-evenly;
 }
+/* Home */
 
 .text-box{
   color: #fff;
@@ -69,17 +73,19 @@ button:hover {
 {
   font-size: 50px;
   font-weight: 600;
+  font-family:  sans-serif;
 }
 .text-box h1{
-  font-size:  150px;
+  font-size:  120px;
   line-height: 125px;
   margin-left: 10px;
   color: transparent;
+  font-family:  sans-serif;
   -webkit-text-stroke: 1px #fff;
   background: url("/img/wavedw.svg");
   -webkit-background-clip: text;
   background-position: 0 0;
-  animation: back 20s linear infinite;
+  animation: back 30s linear infinite;
 }
 @keyframes back{
   100%{
@@ -89,4 +95,33 @@ button:hover {
 .text-box h3{
   font-size: 40px;
   font-weight: 500;
+  font-family:  sans-serif;
+}
+.about-me {
+  margin: 11px;
+}
+
+.about-me p i{
+  width: 27px;
+ 
+}
+.about-me p{
+  font-size: 26px;
+  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+
+  
+}
+i.fab.fa-js-square {
+  color: #ffff00;
+}
+i.fab.fa-css3-alt {
+  color: #3c45db;
+}
+i.fab.fa-html5 {
+  color: orange;
+}
+i.fas.fa-shield-alt {
+  color: red;
 }
