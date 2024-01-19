@@ -1,38 +1,92 @@
 * {
   padding: 0;
   box-sizing: 0;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #24252a;
 }
-body {
-  
-  background-color: #0d131a;
-  color: #fff;
-  overflow-y: hidden;
+/* Nav Bar */
+li,
+a,
+button {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
 }
-
-.parent {
+header {
   display: flex;
-
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+.logo {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
 }
 
-.title {
+.nav_link {
+  list-style: none;
+}
+.nav_link li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav_link li a {
+  transition: all 0.3 ease 0s;
+}
+.nav_link li a:hover {
+  color: #0088a9;
+}
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+  border-radius: 25px;
+}
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.text-box{
+  color: #fff;
 
 }
-.contetn {
-
+.text-box .im 
+{
+  font-size: 50px;
+  font-weight: 600;
 }
-.footer {
-
+.text-box h1{
+  font-size:  150px;
+  line-height: 125px;
+  margin-left: 10px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url("/img/wavedw.svg");
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
 }
-.right-side {
-
+@keyframes back{
+  100%{
+    background-position: 2000px 0px;
+  }
 }
-
-.name h1 {
-  font-family: "Lucida Sans Typewriter", "Lucida Console", monaco,
-"Bitstream Vera Sans Mono", monospace;
-  font-size: 68.03pt;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 16px;
+.text-box h3{
+  font-size: 40px;
+  font-weight: 500;
 }
