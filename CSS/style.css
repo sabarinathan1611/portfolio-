@@ -82,14 +82,14 @@ button:hover {
   color: transparent;
   font-family:  sans-serif;
   -webkit-text-stroke: 1px #fff;
-  background: url("/img/wavedw.svg");
+  background: url("/img/Untitled\ design\ \(1\).png");
   -webkit-background-clip: text;
-  background-position: 0 0;
+  background-position: 0 -627px;
   animation: back 30s linear infinite;
 }
 @keyframes back{
   100%{
-    background-position: 2000px 0px;
+    background-position: 2000px -627px;
   }
 }
 .text-box h3{
